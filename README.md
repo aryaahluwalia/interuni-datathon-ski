@@ -23,7 +23,8 @@ However, the databaes recognise that different groups of people have different p
 In this directory you will find the following files:
 1. **EDA.ipynb**: this notebook features our initial deepdive into the data, exploring its characteristics and generating visuals to paint a picture with the numbers
 2. **Cleaning.ipynb**: Raw data is ingested into this notebook and output as cleaned datasets ready for use in our forecasting and predictive models
-3. **
+3. **recommendation_pipeline.ipynb**: Here lies our entire modelling process. From forecasting temperatures to predicting visitation in ski periods to scoring resorts and weeks based on our focus groups' priorities, everything is included here.
+4. **PLAN.md**: this file includes a written explanation of the steps taken in recommendation_pipeline.ipynb
 
 ## Contributors
 * Arya Ahluwalia

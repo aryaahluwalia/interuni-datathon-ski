@@ -1,0 +1,6 @@
+resort,event_name,start_date,end_date,audience_tags,impact_type,impact_strength
+# EXAMPLE ROWS - replace or extend
+Thredbo,Uni Week,2026-07-22,2026-07-29,youth,attracts,0.7
+Falls Creek,Kids Snow Festival,2026-07-01,2026-07-07,family,discount,0.5
+Perisher,Spring Music Fest,2026-09-05,2026-09-12,youth,attracts,0.6
+Mt. Buller,Family Fun Week,2026-07-08,2026-07-14,family,discount,0.4

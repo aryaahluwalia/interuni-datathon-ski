@@ -25,6 +25,7 @@ In this directory you will find the following files:
 2. **Cleaning.ipynb**: Raw data is ingested into this notebook and output as cleaned datasets ready for use in our forecasting and predictive models
 3. **recommendation_pipeline.ipynb**: Here lies our entire modelling process. From forecasting temperatures to predicting visitation in ski periods to scoring resorts and weeks based on our focus groups' priorities, everything is included here.
 4. **PLAN.md**: this file includes a written explanation of the steps taken in recommendation_pipeline.ipynb
+5. **events.csv** and **amenities.csv**: These files are extra datasets created by scraping resort websites for information surrounding the events that commonly run during ski season and amenities available to holiday-goers. Information from these has been used to inform recommendations in recommendation_pipeline.ipynb.
 
 ## Contributors
 * Arya Ahluwalia

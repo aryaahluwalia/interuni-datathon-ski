@@ -1,4 +1,5 @@
 ## Datathon Plan: Ultimate 2026 Ski Holiday
+Warning: This file is not extremely organised.
 
 ### Objectives
 - **Primary**: Recommend the optimal 7‑day window in 2026 and the best ANZ ski resort for a winter getaway.
@@ -13,7 +14,6 @@
 - **climate.csv**: Daily station observations (BOM schema).
   - Columns: `Bureau of Meteorology station number`, `Year`, `Month`, `Day`, `Maximum temperature (Degree C)`, `Minimum temperature (Degree C)`, `Rainfall amount (millimetres)`.
   - Notes: Missing values present; station mapping to resorts required; snow proxy derived from temperature + precipitation.
-- **External (optional)**: Resort lift ticket price histories, accommodation indices, school holiday calendars (AU states + NZ), snowfall reports, terrain/open lift counts.
  - **events.csv / amenities.csv** (extension): curated inputs for youth/family targeting; event timing/intensity and static amenity scores per resort.
 
 ### Season anchors and week mapping
@@ -97,32 +97,6 @@
 6. **2026 selection**
    - Use historical climate/visitation patterns to identify typical best weeks; overlay 2026 state school holiday calendars (VIC/NSW) and price proxies.
    - Present top 5 resort × week candidates with uncertainty bands; select final recommendation.
-
-### Visuals (storytelling)
-- Season curves: weekly visitation by resort with bands for school holidays.
-- Climate ribbons: weekly cold‑day counts and cold‑precip bars per resort.
-- Heatmap: resort × week composite scores.
-- Calendar view: 2026 winter with recommended week highlighted.
-- Resort profile cards: key features, pros/cons, accessibility map.
- - Visuals pack (Step 17): heatmaps for General/Youth/Family across resorts×start dates; weekly visitor bars with holiday highlights; climate mean + p20–p80 ribbon.
-
-### Deliverables
-- `notebook.ipynb` with reproducible analysis and visuals.
-- Exported figures for presentation deck.
-- One‑pager summary with final pick and reasoning.
-
-### Risks & mitigations
-- Missing/biased climate data → use multiple nearby stations or reweight; impute conservatively.
-- Station elevation mismatch → adjust temperatures by lapse rate (~6.5°C/1,000m) if metadata available.
-- Week alignment between datasets → validate against 2014–2023 examples; fix offsets early.
-
-### Next steps
-1) Create the notebook scaffold and data‑loading cells.
-2) Build weekly climate aggregation and station mapping.
-3) Engineer snow/comfort features and compute visitation predictions.
-4) Implement scoring and produce ranked candidates + visuals.
-
-
 
 ### Validation plan
 - **Visitor forecasting (weekly, per resort)**
